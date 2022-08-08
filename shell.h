@@ -10,16 +10,18 @@
 
 /*=================== Shell_Init ==========*/
 
-int main(int ac, char **av, char *env);
+int main(int ac, char **av, char **env);
 void prompt(void);
 void handle(int signals);
 void _EOF(char *buffer);
 void shell_exit(char **command);
 
-/*==============    create_child    ===================*/
+/*===============    Create_child   ===============*/
+
 
 void create_child(char **command, char *name, char **env, int circles);
 int change_dir(const char *path);
+
 
 /*=========================== Execute   ============*/
 
